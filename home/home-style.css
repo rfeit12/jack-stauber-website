@@ -1,0 +1,16 @@
+/* PAGINA HOME */
+#home {
+    display:flex;
+    justify-content: space-between;
+}
+
+#home p {
+    font-size: 80px;
+    text-align: right;
+    margin-top: 150px;
+    margin-right: 100px;
+}
+
+#home-img {
+    width: 650px;
+}

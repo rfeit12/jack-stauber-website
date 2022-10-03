@@ -1,0 +1,40 @@
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+#jack-photo {
+    width: 350px;
+    height: 350px;
+    object-fit:cover;
+    border-radius: 50%;
+}
+
+#redes-sociais {
+    display: flex;
+    align-items: center;
+}
+
+#youtube {
+    width: 100px;
+    height: 90px;
+}
+
+#instagram {
+    width: 90px;
+    height: 95px;
+}
+
+#facebook {
+    width: 85px;
+    height: 95px;
+}
+
+#twitter {
+    width: 80px;
+    height: 90px;
+}
+
+iframe {
+    margin-top: 30px;
+}

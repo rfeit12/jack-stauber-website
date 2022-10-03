@@ -1,0 +1,127 @@
+#albuns, #albuns-titulos-div {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 850px;
+}
+
+.capas {
+   width: 150px;
+   height: 150px;
+   overflow: hidden;
+   position: relative;
+}
+
+.capas:last-of-type {
+    border: 1px solid white;
+}
+
+.glitch {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#finite-form {
+    background: url(/images/finite-form-capa.jfif) no-repeat center center;
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+#viator {
+    background: url(/images/viator-capa.jfif) no-repeat center center;
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+#hi-lo {
+    background: url(/images/hi-lo-capa.jfif) no-repeat center center;
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+#pop-food {
+    background: url(/images/pop-food-capa.jfif) no-repeat center center;
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+#micropop {
+    background: url(/images/micropop-capa.jfif) no-repeat center center;
+    background-size: cover;
+    transform: scale(1.1);
+}
+
+.glitch:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background:inherit;
+    transform: translateX(10px);
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+.glitch:before {
+    animation-name: glitchAnim1; 
+}
+
+.glitch:after {
+    animation-name: glitchAnim2;
+}
+@keyframes glitchAnim1{
+    0%, 25.1%, 100%{
+        clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    }
+    4%{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 10%);
+    }
+    5%{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    9%{
+        clip-path: polygon(0 20%, 100% 20%, 100% 30%, 0 30%);
+    }
+    10%{
+        clip-path: polygon(0 20%, 100% 20%, 100% 20%, 0 20%);
+    }
+    14%{
+        clip-path: polygon(0 40%, 100% 20%, 100% 50%, 0 50%);
+    }
+    15%{
+        clip-path: polygon(0 40%, 100% 20%, 100% 20%, 0 20%);
+    }
+    19%{
+        clip-path: polygon(0 60%, 100% 20%, 100% 70%, 0 70%);
+    }
+    20%{
+        clip-path: polygon(0 60%, 100% 20%, 100% 20%, 0 20%);
+    }
+    24%{
+        clip-path: polygon(0 80%, 100% 80%, 100% 90%, 0 90%);
+    }
+    25%{
+        clip-path: polygon(0 80%, 100% 80%, 100% 80%, 0 80%);
+    }
+}
+
+.albuns-titulos {
+    width: 150px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+.iframes {
+    display: flex;
+    justify-content: space-around;
+}
