@@ -1,16 +1,72 @@
-/* PAGINA HOME */
-#home {
-    display:flex;
-    justify-content: space-between;
+body {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    margin: 0;
+    background-image: url(/images/vhs-glitch.gif);
+    background-size: cover;
+    opacity: 70%;
 }
 
-#home p {
-    font-size: 80px;
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+
+#title {
+    margin-top: -30px;
+    height:175px;
+}
+
+nav {
+    width:  100%;
+    height: 50px;
+    margin-top: 25px;
+    display: flex;
+    justify-content:flex-end;
+}
+
+nav img {
+    width: 100px;
+    height: 50px;
+    margin-right: 80px;
+}
+
+footer p{
+    font-size: 12px;
     text-align: right;
-    margin-top: 150px;
-    margin-right: 100px;
+    margin-right: 25px;
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    right:0;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#home-title {
+    font-size: 100px;
+    text-align: right;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+#buttercup {
+    text-align: right;
+    margin-right: 15%;
 }
 
 #home-img {
-    width: 650px;
+    position: fixed;
+    width: 40%;
+    left: 0;
+    bottom: 0;
 }
